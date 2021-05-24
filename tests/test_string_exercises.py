@@ -37,14 +37,14 @@ class TestExercise(unittest.TestCase):
         actual = self.string_exercise.find_longest_word(text)
         self.assertEqual(expected, actual)
 
-        text = "foo foo1 foo2 foo3"
+        text = "foo foo1 foo1 foo1"
         expected = "foo1"
         actual = self.string_exercise.find_longest_word(text)
         self.assertEqual(expected, actual)
 
     def test_get_word_lengths(self):
-        text = "Three tomatoes are walking down the street"
-        expected = [5, 8, 3, 7, 4, 3, 6]
+        text = "Three tmatoes are walking down the street"
+        expected = [5, 7, 3, 7, 4, 3, 6]
         actual = self.string_exercise.get_word_lengths(text)
         self.assertEqual(expected, actual) 
 
